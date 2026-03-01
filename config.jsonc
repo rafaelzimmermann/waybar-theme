@@ -9,14 +9,13 @@
 
     "fixed-center": true,
     "modules-left": ["hyprland/workspaces", "tray", "hyprland/window"],
-    "modules-center": ["custom/spacer", "clock", "mpris"],
-    "modules-right": ["cpu", "memory", "temperature", "custom/gpu-temp", "wireplumber", "network", "custom/update", "custom/power"],
+    "modules-center": ["mpris"],
+    "modules-right": ["cpu", "memory", "temperature", "custom/gpu-temp", "wireplumber", "network", "custom/update", "custom/power", "clock"],
 
     "include": [
         "~/.config/waybar/modules/hyprland-workspaces.jsonc",
         "~/.config/waybar/modules/hyprland-window.jsonc",
         "~/.config/waybar/modules/clock.jsonc",
-        "~/.config/waybar/modules/custom-spacer.jsonc",
         "~/.config/waybar/modules/cpu.jsonc",
         "~/.config/waybar/modules/memory.jsonc",
         "~/.config/waybar/modules/temperature.jsonc",
