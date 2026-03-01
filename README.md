@@ -38,13 +38,27 @@ waybar-theme/
 └── README.md
 ```
 
+## Requirements
+
+- `waybar`
+- `fzf`
+- `pacman-contrib`
+- `networkmanager` (with `NetworkManager` enabled)
+
+Install on Arch:
+
+```bash
+sudo pacman -S --needed waybar fzf pacman-contrib networkmanager
+sudo systemctl enable --now NetworkManager
+```
+
 ## Installation
 
 ```bash
 ./install.sh
 ```
 
-Symlinks this directory to `~/.config/waybar` and copies
+Copies config files to `~/.config/waybar` and sets
 `themes/catppuccin-mocha.css` as the active `theme.css`.
 
 ## Switching themes

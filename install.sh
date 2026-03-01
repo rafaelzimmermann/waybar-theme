@@ -4,12 +4,6 @@ set -e
 WAYBAR_THEME_DIR="$(cd "$(dirname "$0")" && pwd)"
 DEST="$HOME/.config/waybar"
 
-echo "→ Installing required packages..."
-sudo pacman -S --needed --noconfirm fzf pacman-contrib networkmanager
-
-sudo systemctl start NetworkManager
-sudo systemctl enable NetworkManager  # to start on boot
-
 echo "→ Setting default theme (catppuccin-mocha)..."
 cp "$WAYBAR_THEME_DIR/themes/catppuccin-mocha.css" "$WAYBAR_THEME_DIR/theme.css"
 
