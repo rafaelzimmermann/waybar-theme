@@ -9,11 +9,11 @@
 #memory.critical { color: @red; }
 
 /* MPRIS */
-#mpris { color: @green; font-style: italic; padding: 0 12px; min-width: 460px; }
+#mpris { color: @green; padding: 0 12px; min-width: 600px; }
 #mpris.paused { color: @overlay1; }
 
 /* Spacer (mirrors mpris width to keep clock centered) */
-#custom-spacer { padding: 0 24px; min-width: 460px; }
+#custom-spacer { padding: 0 6px; min-width: 600px; }
 
 /* Update */
 #custom-update { color: @blue; padding: 0 6px; }
@@ -23,7 +23,6 @@
 
 #window {
     color: @green;
-    font-style: italic;
 }
 
 #clock {
