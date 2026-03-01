@@ -1,11 +1,20 @@
 {
     "bluetooth": {
-        "format": " {status}",
-        "format-connected": " {device_alias}",
-        "format-connected-battery": " {device_alias} {device_battery_percentage}%",
-        "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
-        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
-        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-        "on-click": "blueman-manager"
+        "format": "󰂯",
+        "format-disabled": "󰂲",
+        "format-off": "󰂲",
+        "format-on": "󰂰",
+        "format-connected": "󰂱",
+        "min-length": 2,
+        "max-length": 2,
+        "on-click": "blueman-manager",
+        "tooltip-format": "Device Addr: {device_address}",
+        "tooltip-format-disabled": "Bluetooth Disabled",
+        "tooltip-format-off": "Bluetooth Off",
+        "tooltip-format-on": "Bluetooth Disconnected",
+        "tooltip-format-connected": "Device: {device_alias}",
+        "tooltip-format-enumerate-connected": "Device: {device_alias}",
+        "tooltip-format-connected-battery": "Device: {device_alias}\nBattery: {device_battery_percentage}%",
+        "tooltip-format-enumerate-connected-battery": "Device: {device_alias}\nBattery: {device_battery_percentage}%"
     }
 }

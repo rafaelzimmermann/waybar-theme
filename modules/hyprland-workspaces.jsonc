@@ -4,9 +4,7 @@
         "format-icons": {
             "1": "󰲠", "2": "󰲢", "3": "󰲤",
             "4": "󰲦", "5": "󰲨", "6": "󰲪",
-            "urgent": "",
-            "active": "",
-            "default": ""
+            "urgent": ""
         },
         "persistent-workspaces": { "*": 5 }
     }

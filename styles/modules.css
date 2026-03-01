@@ -1,3 +1,26 @@
+/* CPU */
+#cpu { color: @teal; padding: 0 6px; }
+#cpu.warning { color: @yellow; }
+#cpu.critical { color: @red; }
+
+/* Memory */
+#memory { color: @teal; padding: 0 6px; }
+#memory.warning { color: @yellow; }
+#memory.critical { color: @red; }
+
+/* MPRIS */
+#mpris { color: @green; font-style: italic; padding: 0 12px; min-width: 460px; }
+#mpris.paused { color: @overlay1; }
+
+/* Spacer (mirrors mpris width to keep clock centered) */
+#custom-spacer { padding: 0 24px; min-width: 460px; }
+
+/* Update */
+#custom-update { color: @blue; padding: 0 6px; }
+
+/* Power */
+#custom-power { color: @red; padding: 0 6px; }
+
 #window {
     color: @green;
     font-style: italic;
@@ -10,6 +33,7 @@
 
 #temperature {
     color: @teal;
+    padding: 0 6px;
 }
 
 #temperature.critical {
@@ -18,6 +42,7 @@
 
 #custom-gpu-temp {
     color: @teal;
+    padding: 0 6px;
 }
 
 #custom-gpu-temp.critical {
@@ -26,6 +51,7 @@
 
 #wireplumber {
     color: @mauve;
+    padding: 0 6px;
 }
 
 #wireplumber.muted {
@@ -34,6 +60,7 @@
 
 #network {
     color: @blue;
+    padding: 0 6px;
 }
 
 #network.disconnected {

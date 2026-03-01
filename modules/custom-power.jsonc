@@ -1,0 +1,7 @@
+{
+    "custom/power": {
+        "format": "󰐥",
+        "on-click": "hyprctl dispatch exec \"[float;center;size 600 400] ghostty -e ~/.config/waybar/scripts/power\"",
+        "tooltip-format": "Power Menu"
+    }
+}

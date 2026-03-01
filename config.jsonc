@@ -3,20 +3,29 @@
     "position": "top",
     "height": 34,
     "spacing": 4,
+    "margin-top": 6,
+    "margin-left": 6,
+    "margin-right": 6,
 
-    "modules-left": ["hyprland/workspaces", "hyprland/window"],
-    "modules-center": ["clock"],
-    "modules-right": ["temperature", "custom/gpu-temp", "wireplumber", "network", "bluetooth", "tray"],
+    "fixed-center": true,
+    "modules-left": ["hyprland/workspaces", "tray", "hyprland/window"],
+    "modules-center": ["custom/spacer", "clock", "mpris"],
+    "modules-right": ["cpu", "memory", "temperature", "custom/gpu-temp", "wireplumber", "network", "custom/update", "custom/power"],
 
     "include": [
         "~/.config/waybar/modules/hyprland-workspaces.jsonc",
         "~/.config/waybar/modules/hyprland-window.jsonc",
         "~/.config/waybar/modules/clock.jsonc",
+        "~/.config/waybar/modules/custom-spacer.jsonc",
+        "~/.config/waybar/modules/cpu.jsonc",
+        "~/.config/waybar/modules/memory.jsonc",
         "~/.config/waybar/modules/temperature.jsonc",
         "~/.config/waybar/modules/custom-gpu-temp.jsonc",
+        "~/.config/waybar/modules/mpris.jsonc",
         "~/.config/waybar/modules/wireplumber.jsonc",
         "~/.config/waybar/modules/network.jsonc",
-        "~/.config/waybar/modules/bluetooth.jsonc",
+        "~/.config/waybar/modules/custom-update.jsonc",
+        "~/.config/waybar/modules/custom-power.jsonc",
         "~/.config/waybar/modules/tray.jsonc"
     ]
 }
