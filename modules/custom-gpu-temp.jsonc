@@ -1,0 +1,9 @@
+{
+    "custom/gpu-temp": {
+        "exec": "~/.config/waybar/scripts/gpu-temp.sh",
+        "return-type": "json",
+        "interval": 5,
+        "format": "󰾲 {}",
+        "tooltip": false
+    }
+}

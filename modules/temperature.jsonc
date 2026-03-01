@@ -1,0 +1,9 @@
+{
+    "temperature": {
+        "hwmon-path": "/sys/class/hwmon/hwmon8/temp1_input",
+        "critical-threshold": 80,
+        "format": "󰍛 {temperatureC}°C",
+        "format-critical": "󰍛 {temperatureC}°C",
+        "tooltip": false
+    }
+}

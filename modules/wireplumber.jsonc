@@ -1,0 +1,9 @@
+{
+    "wireplumber": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰖁 muted",
+        "format-icons": ["󰕿", "󰖀", "󰕾"],
+        "on-click": "pavucontrol",
+        "scroll-step": 5
+    }
+}

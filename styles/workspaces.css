@@ -1,0 +1,22 @@
+#workspaces button {
+    padding: 0 6px;
+    background-color: transparent;
+    color: @overlay1;
+    border-radius: 4px;
+    margin: 4px 2px;
+}
+
+#workspaces button.active {
+    color: @blue;
+    background-color: alpha(@blue, 0.15);
+}
+
+#workspaces button.urgent {
+    color: @red;
+    background-color: alpha(@red, 0.15);
+}
+
+#workspaces button:hover {
+    background-color: alpha(@blue, 0.1);
+    color: @text;
+}

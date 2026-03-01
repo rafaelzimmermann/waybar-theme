@@ -1,0 +1,15 @@
+* {
+    font-family: "FiraCode Nerd Font", "Font Awesome 6 Free", "Symbols Nerd Font", monospace;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: alpha(@base, 0.92);
+    border-bottom: 2px solid alpha(@blue, 0.4);
+    color: @text;
+}
+
+.modules-left, .modules-center, .modules-right {
+    padding: 0 8px;
+}

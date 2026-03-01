@@ -1,0 +1,62 @@
+#window {
+    color: @green;
+    font-style: italic;
+}
+
+#clock {
+    color: @yellow;
+    font-weight: bold;
+}
+
+#temperature {
+    color: @teal;
+}
+
+#temperature.critical {
+    color: @red;
+}
+
+#custom-gpu-temp {
+    color: @teal;
+}
+
+#custom-gpu-temp.critical {
+    color: @red;
+}
+
+#wireplumber {
+    color: @mauve;
+}
+
+#wireplumber.muted {
+    color: @overlay1;
+}
+
+#network {
+    color: @blue;
+}
+
+#network.disconnected {
+    color: @red;
+}
+
+#bluetooth {
+    color: @sky;
+}
+
+#bluetooth.connected {
+    color: @sapphire;
+}
+
+#tray {
+    padding: 0 4px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: @red;
+}

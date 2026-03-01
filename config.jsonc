@@ -1,0 +1,22 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 34,
+    "spacing": 4,
+
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["temperature", "custom/gpu-temp", "wireplumber", "network", "bluetooth", "tray"],
+
+    "include": [
+        "~/.config/waybar/modules/hyprland-workspaces.jsonc",
+        "~/.config/waybar/modules/hyprland-window.jsonc",
+        "~/.config/waybar/modules/clock.jsonc",
+        "~/.config/waybar/modules/temperature.jsonc",
+        "~/.config/waybar/modules/custom-gpu-temp.jsonc",
+        "~/.config/waybar/modules/wireplumber.jsonc",
+        "~/.config/waybar/modules/network.jsonc",
+        "~/.config/waybar/modules/bluetooth.jsonc",
+        "~/.config/waybar/modules/tray.jsonc"
+    ]
+}
