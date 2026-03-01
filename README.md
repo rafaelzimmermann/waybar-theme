@@ -4,7 +4,8 @@ Waybar configuration with a clean theme layer. Currently ships **Catppuccin Moch
 
 ## Preview
 
-<!-- Add screenshot here -->
+<img width="3434" height="39" alt="image" src="https://github.com/user-attachments/assets/54abf779-7ed8-4109-87d3-f53f8747d818" />
+
 
 ## Structure
 
