@@ -1,11 +1,11 @@
 {
-    "hyprland/workspaces": {
-        "format": "{icon}",
-        "format-icons": {
-            "1": "󰲠", "2": "󰲢", "3": "󰲤",
-            "4": "󰲦", "5": "󰲨", "6": "󰲪",
-            "urgent": ""
-        },
-        "persistent-workspaces": { "*": 5 }
-    }
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "1": "󰲠", "2": "󰲢", "3": "󰲤",
+      "4": "󰲦", "5": "󰲨", "6": "󰲪",
+      "urgent": ""
+    },
+    "persistent-workspaces": { "DP-1": [1,2,3], "HDMI-A-1": [4,5,6], "DP-2": [7,8,9] }
+  }
 }
