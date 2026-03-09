@@ -2,13 +2,13 @@
 #
 # Caffeine toggle — disable/enable hyprlock via hypridle
 #
-# Steam rising from cup = ON  (hypridle stopped, screen won't lock)
+# Steam rising from cup = ON  (hypridle killed, screen won't lock)
 # Plain cup             = OFF (hypridle running, screen locks on idle)
 
 ICONS="$HOME/.config/waybar/icons"
 
 get_status() {
-    if systemctl --user is-active --quiet hypridle; then
+    if pgrep -x hypridle > /dev/null; then
         echo "$ICONS/caffeine-inactive.png"
     else
         echo "$ICONS/caffeine-active.png"
@@ -17,10 +17,10 @@ get_status() {
 
 case "$1" in
     toggle)
-        if systemctl --user is-active --quiet hypridle; then
-            systemctl --user stop hypridle
+        if pgrep -x hypridle > /dev/null; then
+            pkill -x hypridle
         else
-            systemctl --user start hypridle
+            hypridle &
         fi
         pkill -SIGRTMIN+8 waybar
         ;;
