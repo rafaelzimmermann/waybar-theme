@@ -1,0 +1,10 @@
+{
+    "image#caffeine": {
+        "exec": "~/.config/waybar/scripts/caffeine",
+        "size": 20,
+        "interval": 30,
+        "signal": 8,
+        "on-click": "~/.config/waybar/scripts/caffeine toggle",
+        "tooltip": "Toggle screen lock"
+    }
+}

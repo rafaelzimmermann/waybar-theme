@@ -15,6 +15,9 @@
 /* Spacer (mirrors mpris width to keep clock centered) */
 #custom-spacer { padding: 0 6px; min-width: 600px; }
 
+/* Caffeine */
+#caffeine { padding: 0 6px; }
+
 /* Update */
 #custom-update { color: @blue; padding: 0 6px; }
 

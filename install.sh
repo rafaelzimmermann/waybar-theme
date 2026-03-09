@@ -16,6 +16,7 @@ cp -r "$WAYBAR_THEME_DIR/modules"   "$DEST/"
 cp -r "$WAYBAR_THEME_DIR/styles"    "$DEST/"
 cp -r "$WAYBAR_THEME_DIR/scripts"   "$DEST/"
 cp -r "$WAYBAR_THEME_DIR/themes"    "$DEST/"
+cp -r "$WAYBAR_THEME_DIR/icons"     "$DEST/"
 
 echo "→ Restarting waybar..."
 pkill waybar || true
