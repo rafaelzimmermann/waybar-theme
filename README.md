@@ -44,12 +44,19 @@ waybar-theme/
 - `fzf`
 - `pacman-contrib`
 - `networkmanager` (with `NetworkManager` enabled)
+- [`veu`](https://github.com/rafaelzimmermann/veu)
 
 Install on Arch:
 
 ```bash
 sudo pacman -S --needed waybar fzf pacman-contrib networkmanager
 sudo systemctl enable --now NetworkManager
+```
+
+Install `veu`:
+
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/rafaelzimmermann/veu/main/scripts/install.sh)"
 ```
 
 ## Installation

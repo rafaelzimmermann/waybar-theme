@@ -3,7 +3,7 @@
         "format": "{icon} {volume}%",
         "format-muted": "󰖁 muted",
         "format-icons": ["󰕿", "󰖀", "󰕾"],
-        "on-click": "pavucontrol",
+        "on-click": "veu",
         "scroll-step": 5
     }
 }

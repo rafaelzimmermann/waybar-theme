@@ -20,6 +20,6 @@ cp -r "$WAYBAR_THEME_DIR/icons"     "$DEST/"
 
 echo "→ Restarting waybar..."
 pkill waybar || true
-waybar &
+setsid waybar &>/dev/null &
 
 echo "Done."
