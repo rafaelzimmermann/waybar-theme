@@ -1,0 +1,9 @@
+{
+    "custom/zai-usage": {
+        "exec": "~/.config/waybar/scripts/zai-usage.sh",
+        "return-type": "json",
+        "interval": 60,
+        "format": "{}",
+        "tooltip": true
+    }
+}

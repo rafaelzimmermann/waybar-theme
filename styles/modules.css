@@ -51,6 +51,33 @@
     color: @red;
 }
 
+#custom-claude-usage {
+    color: @sapphire;
+    padding: 0 6px;
+}
+
+#custom-claude-usage.disconnected {
+    color: @overlay1;
+}
+
+#custom-zai-usage {
+    color: @green;
+    padding: 0 6px;
+}
+
+#custom-zai-usage.warning {
+    color: @yellow;
+}
+
+#custom-zai-usage.critical {
+    color: @red;
+}
+
+#custom-zai-usage.disconnected,
+#custom-zai-usage.error {
+    color: @overlay1;
+}
+
 #wireplumber {
     color: @mauve;
     padding: 0 6px;

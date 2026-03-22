@@ -10,7 +10,7 @@
     "fixed-center": true,
     "modules-left": ["hyprland/workspaces", "tray", "hyprland/window"],
     "modules-center": ["mpris"],
-    "modules-right": ["image#caffeine", "cpu", "memory", "temperature", "custom/gpu-temp", "wireplumber", "network", "custom/update", "custom/power", "clock"],
+    "modules-right": ["image#caffeine", "cpu", "memory", "temperature", "custom/gpu-temp", "custom/claude-usage", "custom/zai-usage", "wireplumber", "network", "custom/update", "custom/power", "clock"],
 
     "include": [
         "~/.config/waybar/modules/hyprland-workspaces.jsonc",
@@ -20,6 +20,8 @@
         "~/.config/waybar/modules/memory.jsonc",
         "~/.config/waybar/modules/temperature.jsonc",
         "~/.config/waybar/modules/custom-gpu-temp.jsonc",
+        "~/.config/waybar/modules/custom-claude-usage.jsonc",
+        "~/.config/waybar/modules/custom-zai-usage.jsonc",
         "~/.config/waybar/modules/mpris.jsonc",
         "~/.config/waybar/modules/wireplumber.jsonc",
         "~/.config/waybar/modules/network.jsonc",
