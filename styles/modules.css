@@ -28,6 +28,22 @@
     color: @green;
 }
 
+window#waybar.empty #window {
+    color: @overlay1;
+}
+
+window#waybar.solo #window {
+    color: @green;
+}
+
+window#waybar.floating #window {
+    color: @mauve;
+}
+
+window#waybar.fullscreen #window {
+    color: @peach;
+}
+
 #clock {
     color: @yellow;
     font-weight: bold;

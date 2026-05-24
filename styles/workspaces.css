@@ -16,6 +16,23 @@
     background-color: alpha(@red, 0.15);
 }
 
+#workspaces button.visible {
+    color: @subtext1;
+    background-color: alpha(@subtext1, 0.08);
+}
+
+#workspaces button.persistent {
+    color: @overlay1;
+}
+
+#workspaces button.empty {
+    color: @surface2;
+}
+
+#workspaces button.hosting-monitor {
+    border-bottom: 2px solid alpha(@blue, 0.3);
+}
+
 #workspaces button:hover {
     background-color: alpha(@blue, 0.1);
     color: @text;
