@@ -30,8 +30,6 @@ waybar-theme/
 │   └── tray.jsonc
 ├── scripts/
 │   └── gpu-temp.sh            # NVIDIA GPU temperature (JSON output for waybar)
-├── hyprland/
-│   └── hyprland.lua           # example Hyprland 0.55 Lua config (workspace rules matching waybar layout)
 ├── config.jsonc               # bar-level settings + include module files
 ├── style.css                  # @import theme.css + styles/*.css
 ├── theme.css                  # active theme (copy from themes/ on install)
@@ -67,16 +65,15 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/rafaelzimmermann/veu/main/
 ./install.sh
 ```
 
-Copies config files to `~/.config/waybar`, sets
-`themes/catppuccin-mocha.css` as the active `theme.css`, and copies the
-example Hyprland Lua config to `~/.config/hypr/`.
+Copies config files to `~/.config/waybar` and sets
+`themes/catppuccin-mocha.css` as the active `theme.css`.
 
-### Hyprland 0.55 Lua config
+### Hyprland configuration
 
-Hyprland 0.55 defaults to Lua configuration. An example `hyprland.lua` is
-included in `hyprland/` with workspace rules that match the persistent workspace
-layout used by this waybar theme. Copy it to your Hyprland config directory and
-adjust monitor names (`DP-1`, `HDMI-A-1`, `DP-2`) to match your hardware.
+This theme uses persistent workspaces on three monitors (DP-1: 1–3,
+HDMI-A-1: 4–6, DP-2: 7–9). Add the matching `monitor=` and `workspace=` rules
+to your own `~/.config/hypr/hyprland.conf` — Hyprland config is not managed
+by this theme.
 
 ## Switching themes
 
