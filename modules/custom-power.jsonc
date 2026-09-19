@@ -1,7 +1,7 @@
 {
     "custom/power": {
         "format": "󰐥",
-        "on-click": "hyprctl dispatch exec \"[float;center;size 600 400] ghostty -e ~/.config/waybar/scripts/power\"",
+        "on-click": "hyprctl dispatch 'hl.dsp.exec_cmd(\"ghostty -e ~/.config/waybar/scripts/power\", { float = true, center = true, size = \"600 400\" })'",
         "tooltip-format": "Power Menu"
     }
 }

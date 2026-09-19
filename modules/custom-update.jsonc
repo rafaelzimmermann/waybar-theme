@@ -5,7 +5,7 @@
         "interval": 3600,
         "signal": 1,
         "format": "{}",
-        "on-click": "hyprctl dispatch exec \"[float;center;size 600 400] ghostty -e ~/.config/waybar/scripts/update\"",
+        "on-click": "hyprctl dispatch 'hl.dsp.exec_cmd(\"ghostty -e ~/.config/waybar/scripts/update\", { float = true, center = true, size = \"600 400\" })'",
         "on-click-right": "pkill -RTMIN+1 waybar"
     }
 }

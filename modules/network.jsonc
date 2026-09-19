@@ -11,7 +11,7 @@
         ],
         "min-length": 2,
         "max-length": 2,
-        "on-click": "hyprctl dispatch exec \"[float;center;size 600 400] ghostty -e ~/.config/waybar/scripts/network\"",
+        "on-click": "hyprctl dispatch 'hl.dsp.exec_cmd(\"ghostty -e ~/.config/waybar/scripts/network\", { float = true, center = true, size = \"600 400\" })'",
         "on-click-right": "~/.config/waybar/scripts/network off",
         "tooltip-format": "<b>Gateway</b>: {gwaddr}",
         "tooltip-format-ethernet": "<b>Interface</b>: {ifname}",
