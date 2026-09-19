@@ -70,8 +70,8 @@ Copies config files to `~/.config/waybar` and sets
 
 ### Hyprland configuration
 
-This theme uses persistent workspaces on three monitors (DP-1: 1–3,
-HDMI-A-1: 4–6, DP-2: 7–9). Add the matching `monitor=` and `workspace=` rules
+This theme uses persistent workspaces on three monitors (HDMI-A-1: 1–3,
+DP-1: 4–6, DP-2: 7–9). Add the matching `monitor=` and `workspace=` rules
 to your own `~/.config/hypr/hyprland.conf` — Hyprland config is not managed
 by this theme.
 
