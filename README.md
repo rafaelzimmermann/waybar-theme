@@ -22,14 +22,31 @@ waybar-theme/
 │   ├── hyprland-workspaces.jsonc
 │   ├── hyprland-window.jsonc
 │   ├── clock.jsonc
+│   ├── cpu.jsonc
+│   ├── memory.jsonc
 │   ├── temperature.jsonc
 │   ├── custom-gpu-temp.jsonc
+│   ├── custom-claude-usage.jsonc
+│   ├── custom-zai-usage.jsonc
+│   ├── mpris.jsonc
 │   ├── wireplumber.jsonc
 │   ├── network.jsonc
 │   ├── bluetooth.jsonc
+│   ├── custom-update.jsonc
+│   ├── custom-caffeine.jsonc
+│   ├── custom-power.jsonc
+│   ├── custom-spacer.jsonc
 │   └── tray.jsonc
 ├── scripts/
-│   └── gpu-temp.sh            # NVIDIA GPU temperature (JSON output for waybar)
+│   ├── gpu-temp.sh            # NVIDIA GPU temperature (JSON output for waybar)
+│   ├── claude-usage.sh        # Claude plan quota usage via OAuth
+│   ├── zai-usage.sh           # Z.ai API quota usage
+│   ├── update                 # pacman/AUR update counter + updater
+│   ├── bluetooth              # Bluetooth device picker (bluetoothctl + fzf)
+│   ├── network                # Wi-Fi picker (nmcli + fzf)
+│   ├── power                  # power menu (loginctl/systemctl + fzf)
+│   ├── caffeine               # hypridle toggle with tray icon
+│   └── volume                 # volume control helper
 ├── config.jsonc               # bar-level settings + include module files
 ├── style.css                  # @import theme.css + styles/*.css
 ├── theme.css                  # active theme (copy from themes/ on install)
@@ -44,12 +61,16 @@ waybar-theme/
 - `fzf`
 - `pacman-contrib`
 - `networkmanager` (with `NetworkManager` enabled)
+- `bluez-utils` (bluetooth module)
+- `nvidia-utils` (GPU temp module — needs `nvidia-smi`)
+- `python3`, `jq`, `curl` (usage modules)
+- `hypridle` + `hyprlock` (caffeine module)
 - [`veu`](https://github.com/rafaelzimmermann/veu)
 
 Install on Arch:
 
 ```bash
-sudo pacman -S --needed waybar fzf pacman-contrib networkmanager
+sudo pacman -S --needed waybar fzf pacman-contrib networkmanager bluez-utils nvidia-utils python3 jq curl
 sudo systemctl enable --now NetworkManager
 ```
 
